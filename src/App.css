@@ -15,14 +15,17 @@ body{
     color: #fff;
     font-family: 'Lato', sans-serif;
     overflow-x: hidden;
-    /* background: red; */
-    background-color: #141414;
+    background: black;
+    /* background-color: #141414; */
     /* /* background: url(<path-to-image>), lightgray 50% / cover no-repeat; */
      /* background: rgba(35, 34, 40, 0.91);  */
 }
 
 .navbar{
-    background: rgba(35, 34, 40, 0.95); 
+    /* background: rgba(35, 34, 40, 0.95);  */
+    /* background: rgba(0, 0, 0, 0.95);  */
+    background: #0f0f0f; 
+    /* background-image: linear-gradient(to right, rgba(67,68,67, 0.6), rgba(83, 82, 83, 0.6)); */
     display: flex;
     align-items: center;
     justify-content: space-between;

@@ -3,8 +3,8 @@ import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
 // Import your six components here (ComponentA, ComponentB, ..., ComponentF)
-import ComponentA from './components/ComponentA';
-import ComponentB from './components/ComponentB';
+import ComponentA from './components/home/Home';
+import ComponentB from './components/Video';
 import ComponentC from './components/ComponentC';
 import ComponentD from './components/ComponentD';
 import ComponentE from './components/ComponentE';

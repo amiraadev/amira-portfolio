@@ -2,9 +2,10 @@ import videoSrc from '/media/data_2_orange.mp4';
 import { useEffect } from 'react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import './App.css'
+import Navbar from './components/Navbar';
 
-import Video from './components/Video';
-import Home from './components/home/Home';
+
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -69,32 +70,37 @@ function App() {
 
   return (
     <>
-            <div className="wrapper">
+      <header>
+        <Navbar />
+    </header>
+     <div className="wrapper">
       {/* FIRST SECTION */}
-      <section className="video-section">
-        <div className="video-container">
-          <video src={videoSrc} autoPlay loop muted></video>
-        </div>
-        <div className="img-container">
-          <img src="./media/bgs3.png" alt="" className="img" />
-        </div>
-        <div className="text-content">
-          <div className="img_txt">
-            <div className="title sm left">
-              <span>Amira</span>
-            </div>
-            <div className="title bg left">
-              <span>Allagui</span>
-            </div>
-            <div className="title sm right ">
-              <span>Software</span>
-            </div>
-            <div className="title bg right">
-              <span>Engineer</span>
-            </div>
+        <section className="video-section">
+          <div className="video-container">
+            <video src={videoSrc} autoPlay loop muted></video>
           </div>
-          <p className="txt-bottom">websites that will change your mind</p>
-        </div>
+          <div className="img-container">
+            {/* <img src="./media/bgs3.png" alt="" className="img" /> */}
+            {/* <img src="./media/door_11.png" alt="" className="img" /> */}
+            <img src="./media/door_324.png" alt="" className="img" />
+          </div>
+          <div className="text-content">
+              <div className="img_txt">
+                <div className="title sm left">
+                  <span>Amira</span>
+                </div>
+                <div className="title bg left">
+                  <span>Allagui</span>
+                </div>
+                <div className="title sm right ">
+                  <span>Software</span>
+                </div>
+                <div className="title bg right">
+                  <span>Engineer</span>
+                </div>
+              </div>
+              <p className="txt-bottom">websites that will change your mind</p>
+          </div>
       </section>
     </div>
     </>
