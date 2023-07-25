@@ -1,17 +1,19 @@
+import bgImage from '/media/door_324.png'; // Replace 'bg-image.jpg' with your image file path
 import videoSrc from '/media/data_2_orange.mp4';
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import './App.css'
 import Navbar from './components/Navbar';
-
+import { SelectedPage } from './shared/types'
 
 
 gsap.registerPlugin(ScrollTrigger);
 
-function App() {
+const App = () => {
 
   
+  const [selectedPage, setSelectedPage] = useState(SelectedPage.Home)
 
   useEffect(() => {
 
@@ -68,43 +70,51 @@ function App() {
     });
   });
 
-  return (
-    <>
-      <header>
-        <Navbar />
-    </header>
-     <div className="wrapper">
-      {/* FIRST SECTION */}
-        <section className="video-section">
-          <div className="video-container">
-            <video src={videoSrc} autoPlay loop muted></video>
-          </div>
-          <div className="img-container">
-            {/* <img src="./media/bgs3.png" alt="" className="img" /> */}
-            {/* <img src="./media/door_11.png" alt="" className="img" /> */}
-            <img src="./media/door_324.png" alt="" className="img" />
-          </div>
-          <div className="text-content">
-              <div className="img_txt">
-                <div className="title sm left">
-                  <span>Amira</span>
-                </div>
-                <div className="title bg left">
-                  <span>Allagui</span>
-                </div>
-                <div className="title sm right ">
-                  <span>Software</span>
-                </div>
-                <div className="title bg right">
-                  <span>Engineer</span>
-                </div>
-              </div>
-              <p className="txt-bottom">websites that will change your mind</p>
-          </div>
-      </section>
-    </div>
-    </>
-  )
-}
 
-export default App
+  return (
+    <div className="min-h-screen bg-cover bg-center  md:w-screen" style={{ backgroundImage: `url(${bgImage})` }}>
+      <div className="">
+              <div className="wrapper">
+              {/* FIRST SECTION */}
+                <section className="video-section">
+                  <div className="video-container">
+                    <video src={videoSrc} autoPlay loop muted></video>
+                  </div>
+                  <div className="img-container  bg-gray-900 bg-opacity-50">
+                    <img src="./media/door_324.png" alt="" className="img" />
+                  </div>
+                  <div className="text-content">
+                      <div className="img_txt">
+                        <div className="title sm left">
+                          <span>AMIRA</span>
+                        </div>
+                        <div className="title bg left">
+                          <span>ALLAGUI</span>
+                        </div>
+                        <div className="title sm right ">
+                          <span>SOFTWARE</span>
+                        </div>
+                        <div className="title bg right">
+                          <span>ENGINEER</span>
+                        </div>
+                      </div>
+                      <p className="txt-bottom">websites that will change your mind</p>
+                  </div>
+              </section>
+            </div>
+        <div className="text-white text-4xl font-bold">Welcome to My Website</div>
+      </div>
+    </div>
+  );
+};
+
+export default App;
+
+   
+
+
+{/* <div className="min-h-screen bg-cover bg-center" style={{ backgroundImage: `url(${bgImage})` }}>
+<div className="flex justify-center items-center min-h-screen bg-gray-900 bg-opacity-50">
+  <div className="text-white text-4xl font-bold">Welcome to My Website</div>
+</div>
+</div> */}
