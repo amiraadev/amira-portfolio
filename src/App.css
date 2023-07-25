@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
+
+  @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@200;300&family=Inter:wght@400;600;700&family=Oswald:wght@200;300&family=Rubik:ital,wght@1,500&display=swap');
 *{
     padding: 0;
     margin: 0;
@@ -314,11 +315,30 @@ footer{
 
 
 .title{
-    font-family: w;
-    width: 450px;
-    position: relative;
-    height: 110px;
-    /* overflow: hidden; */
+
+    /* font-family: w; */
+    /* font-family: "Roboto" ,sans-serif; */
+    font-size: min(10vw,10vh);
+    font-weight: 800;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color:transparent;
+    animation:gradientAnimation 10s linear infinite;
+    background-size: 300% 100%;
+    background-image: linear-gradient(90deg,#fca796 0,#f61d0d 14%, #931c04 28% ,#fa7874 43%,#ff7b71 69% ,#e92a04 83%,#7a1d03);
+
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+   to {
+        background-position: 0 50%;
+    }
 }
 
 .bg{
@@ -331,18 +351,22 @@ footer{
 }
 
 .left{
-    left: -25%;
+    right: 80%;
 }
 
 .right{
     top: 50px;
-    left: 75%;
+    left: 80%;
 }
 
 .title span{
     position: absolute;
 }
 
+.content {
+    position: relative;
+
+}
 .n{
     z-index: -1;
     

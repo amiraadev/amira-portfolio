@@ -84,19 +84,32 @@ const App = () => {
                     <img src="./media/door_324.png" alt="" className="img" />
                   </div>
                   <div className="text-content">
+
                       <div className="img_txt">
-                        <div className="title sm left">
-                          <span>AMIRA</span>
-                        </div>
-                        <div className="title bg left">
-                          <span>ALLAGUI</span>
-                        </div>
-                        <div className="title sm right ">
-                          <span>SOFTWARE</span>
-                        </div>
-                        <div className="title bg right">
-                          <span>ENGINEER</span>
-                        </div>
+                              <div className="content left">
+                                  <a className="title sm " href="#"> AMIRA</a>
+                              </div>  
+                                <div className="content left">
+                                  <a className="title  bg " href="#"> ALLAGUI</a>
+                              </div>
+                                <div className="content right">
+                                  <a className="title sm " href="#"> SOFTWARE</a>
+                              </div>
+                                <div className="content right">
+                                  <a className="title bg" href="#"> ENGINEER</a>
+                              </div>
+                                {/* <div className="title sm left">
+                                  <span>AMIRA</span>
+                                </div>
+                                <div className="title bg left">
+                                  <span>ALLAGUI</span>
+                                </div>
+                                <div className="title sm right ">
+                                  <span>SOFTWARE</span>
+                                </div>
+                                <div className="title bg right">
+                                  <span>ENGINEER</span>
+                                </div> */}
                       </div>
                       <p className="txt-bottom">websites that will change your mind</p>
                   </div>
