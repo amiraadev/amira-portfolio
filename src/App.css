@@ -315,9 +315,11 @@ footer{
 
 
 .title{
+    /* font-family: 'DM Sans', sans-serif; */
+/* font-family: 'Inter', sans-serif; */
+/* font-family: 'Oswald', sans-serif; */
+font-family: 'Rubik', sans-serif;
 
-    /* font-family: w; */
-    /* font-family: "Roboto" ,sans-serif; */
     font-size: min(10vw,10vh);
     font-weight: 800;
     -webkit-background-clip: text;
@@ -328,10 +330,6 @@ footer{
     background-image: linear-gradient(90deg,#d05c0a 0,#fb2c1d 14%, #d51b0a 28% ,#640d0a 43%,#ff6458 69% ,#e43917 83%,#5e0901);
 
 }
-a:hover{
-    color:#d05c0a;
-}
-
 
 @keyframes gradientAnimation {
     0% {
@@ -362,6 +360,104 @@ a:hover{
     top: 50px;
     left: 80%;
 }
+
+@media (max-width: 1257px) {
+    .title{
+        font-size: min(8vw,8vh);
+        font-weight: 600;
+        -webkit-background-clip: text;
+        background-clip: text;
+        color:transparent;
+        animation:gradientAnimation 10s linear infinite;
+        background-size: 300% 100%;
+        background-image: linear-gradient(90deg,#d05c0a 0,#fb2c1d 14%, #d51b0a 28% ,#640d0a 43%,#ff6458 69% ,#e43917 83%,#5e0901);
+    
+    }
+
+    .bg{
+        font-size: 60px;
+    }
+    
+    .sm{
+        font-size: 30px;
+        height: 30px;
+    }
+    
+    .left{
+        right: 90%;
+    }
+    
+    .right{
+        top: 50px;
+        left: 90%;
+    }
+  }
+
+
+  @media (max-width: 950px) {
+    .title{
+        font-size: min(6vw,6vh);
+        font-weight: 400;
+        -webkit-background-clip: text;
+        background-clip: text;
+        color:transparent;
+        animation:gradientAnimation 10s linear infinite;
+        background-size: 300% 100%;
+        background-image: linear-gradient(90deg,#d05c0a 0,#fb2c1d 14%, #d51b0a 28% ,#640d0a 43%,#ff6458 69% ,#e43917 83%,#5e0901);
+    
+    }
+
+    .bg{
+        font-size: 40px;
+    }
+    
+    .sm{
+        font-size: 20px;
+        height: 20px;
+    }
+    
+    .left{
+        right: 97%;
+    }
+    
+    .right{
+        top: 50px;
+        left: 97%;
+    }
+  }
+  @media (max-width: 650px) {
+    .title{
+        font-size: min(3vw,3vh);
+        font-weight: 300;
+        -webkit-background-clip: text;
+        background-clip: text;
+        color:#cb1d0d;
+        /* animation:gradientAnimation 10s linear infinite;
+        background-size: 300% 100%;
+        background-image: linear-gradient(90deg,#e43917 83%,#5e0901); */
+    
+    }
+
+    .bg{
+        font-size: 20px;
+    }
+    
+    .sm{
+        font-size: 15px;
+        height: 15px;
+    }
+    
+    .left{
+        top: -150%;
+        right: 97%;
+    }
+    
+    .right{
+        top: -125%;
+        left: 97%;
+    }
+  }
+
 
 .title span{
     position: absolute;

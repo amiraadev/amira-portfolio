@@ -87,16 +87,16 @@ const App = () => {
 
                       <div className="img_txt">
                               <div className="content left">
-                                  <a className="title sm pointer-events-none hover:no-underline" href="#"> AMIRA</a>
+                                  <a className="title font-bold sm pointer-events-none hover:no-underline" href="#"> AMIRA</a>
                               </div>  
                                 <div className="content left">
-                                  <a className="title  bg pointer-events-none hover:no-underline " href="#"> ALLAGUI</a>
+                                  <a className="title font-bold  bg pointer-events-none hover:no-underline " href="#"> ALLAGUI</a>
                               </div>
                                 <div className="content right">
-                                  <a className="title sm pointer-events-none hover:no-underline" href="#"> SOFTWARE</a>
+                                  <a className="title font-bold sm pointer-events-none hover:no-underline" href="#"> SOFTWARE</a>
                               </div>
                                 <div className="content right">
-                                  <a className="title bg pointer-events-none hover:no-underline" href="#"> ENGINEER</a>
+                                  <a className="title font-bold bg pointer-events-none hover:no-underline" href="#"> ENGINEER</a>
                               </div>
                               
                       </div>
