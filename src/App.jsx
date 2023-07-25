@@ -87,29 +87,18 @@ const App = () => {
 
                       <div className="img_txt">
                               <div className="content left">
-                                  <a className="title sm " href="#"> AMIRA</a>
+                                  <a className="title sm pointer-events-none hover:no-underline" href="#"> AMIRA</a>
                               </div>  
                                 <div className="content left">
-                                  <a className="title  bg " href="#"> ALLAGUI</a>
+                                  <a className="title  bg pointer-events-none hover:no-underline " href="#"> ALLAGUI</a>
                               </div>
                                 <div className="content right">
-                                  <a className="title sm " href="#"> SOFTWARE</a>
+                                  <a className="title sm pointer-events-none hover:no-underline" href="#"> SOFTWARE</a>
                               </div>
                                 <div className="content right">
-                                  <a className="title bg" href="#"> ENGINEER</a>
+                                  <a className="title bg pointer-events-none hover:no-underline" href="#"> ENGINEER</a>
                               </div>
-                                {/* <div className="title sm left">
-                                  <span>AMIRA</span>
-                                </div>
-                                <div className="title bg left">
-                                  <span>ALLAGUI</span>
-                                </div>
-                                <div className="title sm right ">
-                                  <span>SOFTWARE</span>
-                                </div>
-                                <div className="title bg right">
-                                  <span>ENGINEER</span>
-                                </div> */}
+                              
                       </div>
                       <p className="txt-bottom">websites that will change your mind</p>
                   </div>

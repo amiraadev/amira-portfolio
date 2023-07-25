@@ -325,9 +325,13 @@ footer{
     color:transparent;
     animation:gradientAnimation 10s linear infinite;
     background-size: 300% 100%;
-    background-image: linear-gradient(90deg,#fca796 0,#f61d0d 14%, #931c04 28% ,#fa7874 43%,#ff7b71 69% ,#e92a04 83%,#7a1d03);
+    background-image: linear-gradient(90deg,#d05c0a 0,#fb2c1d 14%, #d51b0a 28% ,#640d0a 43%,#ff6458 69% ,#e43917 83%,#5e0901);
 
 }
+a:hover{
+    color:#d05c0a;
+}
+
 
 @keyframes gradientAnimation {
     0% {
