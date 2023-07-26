@@ -1,68 +1,148 @@
-import useMediaQuery from "../hooks/UseMediaQuery";
-import {Bars3Icon,XMarkIcon } from "@heroicons/react/24/solid";
+import  { useEffect, useState } from 'react';
+import {Bars3Icon } from "@heroicons/react/24/solid";
+import { HiMenuAlt3 } from 'react-icons/hi';
+import { IoCloseOutline } from 'react-icons/io5';
+import { FaLinkedin, FaGithub } from 'react-icons/fa';
+import { motion, useAnimation } from 'framer-motion';
 
-import { useState } from 'react';
-import Link from "./tools/Link";
+const Navbar = () => {
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
-// import { motion } from 'framer-motion';
+  const toggleMobileMenu = () => {
+    setIsMobileMenuOpen(!isMobileMenuOpen);
+  };
 
-function Navbar(selectedPage,setSelectedPage) {
 
-  const flexBetween ="flex items-center justify-between"
-  const isAboveMediumScreens = useMediaQuery("(min-width:1060px)");
-  const [isMenuToggled, setIsMenuToggled] = useState(false)
-  // const navbarBackground = isTopOfPage ?  "bg-primary-100 drop-shadow" : "top" ;
-  const navbarBackground =   "top" ;
+  const controls = useAnimation();
 
+  useEffect(() => {
+    const staggerAnimation = async () => {
+      await controls.start({
+        opacity: 1,
+        x: -10,
+        transition: { duration: 1 },
+      });
+    };
+
+    staggerAnimation();
+  }, [controls]);
 
   return (
-    <nav>
-    <div className={`${navbarBackground} ${flexBetween} fixed top-0 z-30 w-full py-4`}  >
-            <div className={`${flexBetween} mx-auto w-5/6 `} >
-                <div className={`${flexBetween} w-full gap-4 `}>
-               
-                    
-
-                    {/* {isAboveMediumScreens ? (<div className={`${flexBetween} w-full`}>
-                        <div className={`${flexBetween} gap-8 text-md`}>
-                           <Link page="Home" selectedPage={selectedPage} setSelectedPage={setSelectedPage}/>
-                           <Link page="Benefits" selectedPage={selectedPage} setSelectedPage={setSelectedPage}/>
-                           <Link page="Our Classes" selectedPage={selectedPage} setSelectedPage={setSelectedPage}/>
-                           <Link page="Contact Us" selectedPage={selectedPage} setSelectedPage={setSelectedPage}/>
-                        </div>
-                      
-                    </div>) :(<button 
-                                className={`rounded-full bg-secondary-500 p-2 `}
-                                onClick={() => setIsMenuToggled(!isMenuToggled)}>
-                                    <Bars3Icon className="h-6 w-6 text-white"/>
-                                </button>)} */}
-               
-                </div>
-            </div>
-    </div>
-
-
-     { !isAboveMediumScreens && isMenuToggled && (
-        <div className="fixed right-0 bottom-0 z-40 h-full w-[300px] bg-primary-100 drop-shadow-xl">
-          helllooooooooooooooo
-             <div className="flex justify-end p-12 ">
-                     <button onClick={()=> setIsMenuToggled(!isMenuToggled)}>
-                        <XMarkIcon className="h-6 w-6 text-gray-400"/>
-                     </button>
-             </ div>
-             <div className={`ml-[33%] flex flex-col gap-10 text-2xl`}>
-                           <Link page="Home" selectedPage={selectedPage} setSelectedPage={setSelectedPage}/>
-                           <Link page="Benefits" selectedPage={selectedPage} setSelectedPage={setSelectedPage}/>
-                           <Link page="Our Classes" selectedPage={selectedPage} setSelectedPage={setSelectedPage}/>
-                           <Link page="Contact Us" selectedPage={selectedPage} setSelectedPage={setSelectedPage}/>
-                        </div>
-
-             
-        </ div>
+    <nav className="navbar p-6">
+    { !isMobileMenuOpen && (
+      <div className="flex md:hidden ml-auto">
+        <HiMenuAlt3 onClick={toggleMobileMenu} className="w-8 h-8 cursor-pointer" />
+      </div>
     )}
+  </nav>
+  //   <nav className="navbar p-6  ">
+  //     <span></span>
+  //     <div className="container mx-auto flex justify-between items-center">
+  //       <motion.div 
+  //            className=" hidden md:flex text-white  text-xl font-bold"
+  //            initial="hidden"
+  //            whileInView="visible"
+  //            viewport={{ once: true, amount: 0.5 }}
+  //            transition={{ duration: 3 }}
+  //            variants={{
+  //              hidden: { opacity: 0 },
+  //              visible: { opacity: 1}, // Move staggerChildren here
+  //            }}
+  //            >
+  //             Logo
+  //           </motion.div>
 
-</nav>
-  )
-}
+  //         { !isMobileMenuOpen && <div className="flex justify-start  md:hidden"><HiMenuAlt3 onClick={toggleMobileMenu} className="w-8 h-8 cursor-pointer" /> </div>}
+                 
+  // <motion.div
+  //     className="hidden md:flex justify-center flex-grow"
+  //     initial={{ opacity: 0, x: 450 }}
+  //     animate={controls}
+  //   >
+  //     <motion.a
+  //       href="#"
+  //       className="text-red-500 text-xl font-bold hover:text-red-400 mx-11"
+  //     >
+  //       Home
+  //     </motion.a>
+  //     <motion.a
+  //       href="#"
+  //       className="text-red-500 text-xl font-bold hover:text-red-400 mx-11"
+  //     >
+  //       About
+  //     </motion.a>
+  //     <motion.a
+  //       href="#"
+  //       className="text-red-500 text-xl font-bold hover:text-red-400 mx-11"
+  //     >
+  //       Services
+  //     </motion.a>
+  //     <motion.a
+  //       href="#"
+  //       className="text-red-500 text-xl font-bold hover:text-red-400 mx-11"
+  //     >
+  //       Contact
+  //     </motion.a>
+  //   </motion.div>
 
-export default Navbar
+
+  //        {/* LinkedIn Icon */}
+  //        <motion.div
+  //          className="hidden md:flex "
+  //          initial="hidden"
+  //          whileInView="visible"
+  //          viewport={{ once: true, amount: 0.5 }}
+  //          transition={{ duration: 3 }}
+  //          variants={{
+  //            hidden: { opacity: 0 },
+  //            visible: { opacity: 1}, 
+  //          }}
+  //          >
+  //         <a href="https://www.linkedin.com/in/allagui-amira" className=" hover:scale-110 ">
+  //           <FaLinkedin size={32} className="text-white mr-4 " />
+  //         </a>
+
+  //         {/* GitHub icon */}
+  //         <a href="https://github.com/amirticha" className=" hover:scale-110 ">
+  //           <FaGithub size={32} className="text-white" />
+  //         </a>
+
+  //        </motion.div>
+
+  //     </div>
+
+  //     {/* Mobile Menu */}
+  //     <div
+  //       className={`${
+  //         isMobileMenuOpen ? 'block  items-center justify-between w-full'  : 'hidden'
+  //       } md:hidden`}
+  //     >
+  //       <div className="flex justify-end p-8">
+  //         <IoCloseOutline onClick={toggleMobileMenu} className="w-8 h-6 cursor-pointer" />
+  //       </div>
+  //       <a href="#" className="block text-red-500 px-40 py-3 hover:text-red-400 font-bold">
+  //         Home
+  //       </a>
+  //       <a href="#" className="block text-red-500 px-40  py-3 hover:text-red-400 font-bold">
+  //         About
+  //       </a>
+  //       <a href="#" className="block text-red-500 px-40  py-3 hover:text-red-400 font-bold">
+  //         Services
+  //       </a>
+  //       <a href="#" className="block text-red-500 px-40 py-3 hover:text-red-400 font-bold">
+  //         Contact
+  //       </a>
+  //       <div className="flex px-40 py-3">
+  //         <a href="https://www.linkedin.com/in/allagui-amira" className="hover:scale-110">
+  //           <FaLinkedin size={22} className="text-red-500 mr-5" />
+  //         </a>
+  //         <a href="https://github.com/amirticha" className="hover:scale-110">
+  //           <FaGithub size={22} className="text-red-500" />
+  //         </a>
+  //       </div>
+  //     </div>
+  //   </nav>
+  );
+};
+
+export default Navbar;

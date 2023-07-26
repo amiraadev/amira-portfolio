@@ -17,9 +17,6 @@ body{
     font-family: 'Lato', sans-serif;
     overflow-x: hidden;
     background: black;
-    /* background-color: #141414; */
-    /* /* background: url(<path-to-image>), lightgray 50% / cover no-repeat; */
-     /* background: rgba(35, 34, 40, 0.91);  */
 }
 
 .navbar{
@@ -41,9 +38,9 @@ body{
 .navbar span{
     position: absolute;
     bottom: 0;
-    height: 2px;
+    height: 4px;
     width: 50px;
-    background: linear-gradient(90deg , transparent , #fff);
+    background: linear-gradient(90deg , transparent , #ad1313);
     animation: animate 5s infinite linear;
 }
 
@@ -315,11 +312,7 @@ footer{
 
 
 .title{
-    /* font-family: 'DM Sans', sans-serif; */
-/* font-family: 'Inter', sans-serif; */
-/* font-family: 'Oswald', sans-serif; */
-font-family: 'Rubik', sans-serif;
-
+    font-family: 'Rubik', sans-serif;
     font-size: min(10vw,10vh);
     font-weight: 800;
     -webkit-background-clip: text;
@@ -363,6 +356,7 @@ font-family: 'Rubik', sans-serif;
 
 @media (max-width: 1257px) {
     .title{
+        font-family: 'Rubik', sans-serif;
         font-size: min(8vw,8vh);
         font-weight: 600;
         -webkit-background-clip: text;
@@ -396,6 +390,7 @@ font-family: 'Rubik', sans-serif;
 
   @media (max-width: 950px) {
     .title{
+        font-family: 'Rubik', sans-serif;
         font-size: min(6vw,6vh);
         font-weight: 400;
         -webkit-background-clip: text;
@@ -427,14 +422,12 @@ font-family: 'Rubik', sans-serif;
   }
   @media (max-width: 650px) {
     .title{
+        font-family: 'Rubik', sans-serif;
         font-size: min(3vw,3vh);
         font-weight: 300;
         -webkit-background-clip: text;
         background-clip: text;
         color:#cb1d0d;
-        /* animation:gradientAnimation 10s linear infinite;
-        background-size: 300% 100%;
-        background-image: linear-gradient(90deg,#e43917 83%,#5e0901); */
     
     }
 

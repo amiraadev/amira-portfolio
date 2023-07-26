@@ -72,6 +72,9 @@ const App = () => {
 
 
   return (
+
+    <>
+    <Navbar />
     <div className="min-h-screen bg-cover bg-center  md:w-screen" style={{ backgroundImage: `url(${bgImage})` }}>
       <div className="">
               <div className="wrapper">
@@ -107,6 +110,8 @@ const App = () => {
         <div className="text-white text-4xl font-bold">Welcome to My Website</div>
       </div>
     </div>
+    </>
+    
   );
 };
 
