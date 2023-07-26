@@ -346,12 +346,12 @@ footer{
 }
 
 .left{
-    right: 80%;
+    right: 100%;
 }
 
 .right{
     top: 50px;
-    left: 80%;
+    left: 100%;
 }
 
 @media (max-width: 1257px) {

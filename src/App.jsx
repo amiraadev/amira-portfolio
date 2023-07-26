@@ -1,11 +1,14 @@
 import bgImage from '/media/door_324.png'; // Replace 'bg-image.jpg' with your image file path
-import videoSrc from '/media/data_2_orange.mp4';
+// import videoSrc from '/media/data_2_orange.mp4';
+import videoSrc from '/media/data.mp4';
 import { useEffect, useState } from 'react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import './App.css'
 import Navbar from './components/Navbar';
 import { SelectedPage } from './shared/types'
+import { motion, useAnimation } from 'framer-motion';
+
 
 
 gsap.registerPlugin(ScrollTrigger);
@@ -89,21 +92,43 @@ const App = () => {
                   <div className="text-content">
 
                       <div className="img_txt">
-                              <div className="content left">
-                                  <a className="title font-bold sm pointer-events-none hover:no-underline" href="#"> AMIRA</a>
-                              </div>  
-                                <div className="content left">
-                                  <a className="title font-bold  bg pointer-events-none hover:no-underline " href="#"> ALLAGUI</a>
-                              </div>
+                              <motion.div 
+                                        initial="hidden"
+                                        whileInView="visible"
+                                        viewport={{ once: true, amount: 0.5 }}
+                                        transition={{ duration: 1 ,delay: 1 }}
+                                        variants={{
+                                          hidden: { opacity: 0 ,y:"-10%"},
+                                          visible: { opacity: 1,y:"40%"},                           
+                                        }}
+                                        >
+                                   <div className="content left">
+                                      <a className="title font-bold sm pointer-events-none hover:no-underline" href="#"> AMIRA</a>
+                                  </div>  
+                                    <div className="content left">
+                                      <a className="title font-bold  bg pointer-events-none hover:no-underline " href="#"> ALLAGUI</a>
+                                  </div>
+                              </motion.div>
+                               <motion.div 
+                                        initial="hidden"
+                                        whileInView="visible"
+                                        viewport={{ once: true, amount: 0.5 }}
+                                        transition={{ duration: 1 ,delay: 2 }}
+                                        variants={{
+                                          hidden: { opacity: 0 ,y:"100%"},
+                                          visible: { opacity: 1,y:"40%"},                           
+                                        }}
+                                        >
                                 <div className="content right">
                                   <a className="title font-bold sm pointer-events-none hover:no-underline" href="#"> SOFTWARE</a>
                               </div>
                                 <div className="content right">
                                   <a className="title font-bold bg pointer-events-none hover:no-underline" href="#"> ENGINEER</a>
                               </div>
+                              </motion.div>
                               
                       </div>
-                      <p className="txt-bottom">websites that will change your mind</p>
+                      <p className=" font-bold  txt-bottom">websites that will change your mind</p>
                   </div>
               </section>
             </div>

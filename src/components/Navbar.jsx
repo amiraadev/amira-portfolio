@@ -1,5 +1,4 @@
 import  { useEffect, useState } from 'react';
-import {Bars3Icon } from "@heroicons/react/24/solid";
 import { HiMenuAlt3 } from 'react-icons/hi';
 import { IoCloseOutline } from 'react-icons/io5';
 import { FaLinkedin, FaGithub } from 'react-icons/fa';
