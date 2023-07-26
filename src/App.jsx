@@ -9,7 +9,7 @@ import Navbar from './components/Navbar';
 import { SelectedPage } from './shared/types'
 import { motion, useAnimation } from 'framer-motion';
 import Introduction from './components/Introduction';
-import Skills from './components/Skills';
+import About from './components/About/About';
 
 
 
@@ -196,7 +196,7 @@ timeline.from('.title span' ,{
                   <Introduction />
               </section>
             
-            <Skills/>
+            <About/>
             </div>
       </div>
     </div>

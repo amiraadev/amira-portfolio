@@ -49,11 +49,11 @@ ScrollTrigger.create({
                     </div>
                     <div className="text-container">
                         <p>
-                        From front-end development to seamless back-end integration, I am devoted to creating exceptional online experiences that captivate audiences and drive business growth
+                        From front-end development to seamless back-end integration, I am devoted to create exceptional online experiences that captivate audiences and drive business growth
 
                         </p>
                         <p>
-                        It has become widespread and diverse, but as developers, we recognize that it is still a true form of skill and innovation.
+                        web development has become widespread and diverse, but as developers, we recognize that it is still a true form of skill and innovation.
 
                         </p>
                     </div>
