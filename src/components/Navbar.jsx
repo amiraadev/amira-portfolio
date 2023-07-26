@@ -28,7 +28,7 @@ const Navbar = () => {
 
   return (
   
-    <nav className="navbar p-6  ">
+    <nav className="navbar p-3  ">
       <span></span>
       <div className="container mx-auto flex justify-between items-center">
         <motion.div 
