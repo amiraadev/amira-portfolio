@@ -2,7 +2,7 @@
     position: relative;
     display: flex;
     height: 100vh;
-    overflow: hidden;
+    /* overflow: hidden; */
   }
   
   .landing img {
@@ -38,7 +38,7 @@
     position: absolute;
     top: 35%;
     left: 65%;
-    color: white;
+    color: red;
     font-size: 24px;
     font-weight: 300;
   }

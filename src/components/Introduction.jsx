@@ -59,7 +59,7 @@ ScrollTrigger.create({
                     </div>
                 </div>
                 <div className="right-side">
-                    <p>explore works <i className="fa-solid fa-arrow-right-long"></i></p>
+                    <p>Get to know me <i className="fa-solid fa-arrow-right-long"></i></p>
                 </div>
             </div>
 

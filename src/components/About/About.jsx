@@ -51,11 +51,11 @@ function About() {
         <section className="section bg-black">
 
               <motion.div 
-                className="flex flex-grow mx-auto mb-28 "
+                className="landing flex flex-grow mb-28 w-full"
                 initial="hidden"
                 whileInView="visible"
                 viewport={{ amount: 0.5 }}
-                transition={{ duration: 3 }}
+                transition={{ duration: 0.6 }}
                 variants={{
                 hidden: { opacity: 0 ,x:"50%" },
                 visible: { opacity: 1,x:"0%"}, // Move staggerChildren here
@@ -65,13 +65,13 @@ function About() {
                     src="/media/amira.png"
                     alt="background"
                 />
-                 <div className={styles.sliderContainer}>
-                        <div ref={slider} className={styles.slider}>
-                        <p ref={firstText}>Freelance Developer -</p>
-                        <p ref={secondText}>Freelance Developer -</p>
+                 <div className="sliderContainer">
+                        <div ref={slider} className="slider">
+                            <p ref={firstText}>Software Engineer -</p>
+                            <p ref={secondText}>Software Engineer -</p>
                         </div>
                 </div>
-                <div  className={styles.description}>
+                <div  className="description">
                     <svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M8 8.5C8.27614 8.5 8.5 8.27614 8.5 8L8.5 3.5C8.5 3.22386 8.27614 3 8 3C7.72386 3 7.5 3.22386 7.5 3.5V7.5H3.5C3.22386 7.5 3 7.72386 3 8C3 8.27614 3.22386 8.5 3.5 8.5L8 8.5ZM0.646447 1.35355L7.64645 8.35355L8.35355 7.64645L1.35355 0.646447L0.646447 1.35355Z" fill="white"/>
                     </svg>
@@ -79,61 +79,6 @@ function About() {
                     <p>Designer & Developer</p>
                 </div>
               </motion.div>
-
-            <div className="boxes-container">
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                 {/* <!-- ************************COLUMN1********************************************* --> */}
-                <div className="columns box1">
-                    <div className="col col-1">
-                        <img src="./media/1.jpeg" alt=""/>
-                        <img src="./media/2.jpeg" alt=""/>
-                    </div>
-                    <div className="col-2">
-                        <h1>Carolina</h1>
-                        <span>28 october 2021</span>
-                        <div className="line"></div>
-                        <div className="text-box">
-                            <p>
-                                This series is excellently showing that ordinary
-                                portrait photography still can be inspiring for you.
-                            </p>
-                            <p>
-                                Check the shots of beautiful Caroline in hat with red and green lights.
-                            </p>
-                        </div>
-                    </div>
-                    <div className="col col-3">
-                        <img src="./media/3.webp" alt=""/>
-                        <img src="./media/4.jpeg" alt=""/>
-                        <img src="./media/5.jpeg" alt=""/>
-                    </div>
-                </div>
-             
-           
-            </div>
         </section>
   )
 }
