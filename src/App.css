@@ -350,7 +350,7 @@ footer{
 }
 
 .right{
-    top: 50px;
+    bottom: 200x;
     left: 100%;
 }
 
@@ -466,7 +466,7 @@ footer{
 }
 
 .text-content p{
-    transform: translateY(200px);
+    transform: translateY(140px);
     text-transform: uppercase;
     font-size: 16px;
     letter-spacing: 12px;
