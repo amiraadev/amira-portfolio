@@ -10,6 +10,7 @@ import { SelectedPage } from './shared/types'
 import { motion, useAnimation } from 'framer-motion';
 import Introduction from './components/Introduction';
 import About from './components/About/About';
+import Skills from './components/Skills/Skills';
 
 
 
@@ -130,7 +131,8 @@ timeline.from('.title span' ,{
 
     <>
     <Navbar />
-    <div className="min-h-screen bg-cover bg-center  md:w-screen" style={{ backgroundImage: `url(${bgImage})` }}>
+    {/* <div className="min-h-screen bg-cover bg-center  md:w-screen" style={{ backgroundImage: `url(${bgImage})` }}> */}
+    <div className="min-h-screen bg-cover bg-center  md:w-screen" >
       <div className="">
               <div className="wrapper">
               {/* FIRST SECTION */}
@@ -200,8 +202,8 @@ timeline.from('.title span' ,{
             </div>
       </div>
     </div>
+            <Skills/>
 
-    
     <footer>
         <div className="logo"><a href="#">eraf</a></div>
         <div className="btn">instegram</div>

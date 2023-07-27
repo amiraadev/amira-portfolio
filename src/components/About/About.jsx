@@ -5,6 +5,7 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import './styles.css'
 
 import { motion } from 'framer-motion';
+import Skills from '../Skills/Skills';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -49,7 +50,7 @@ function About() {
 
    return (
         <section className="section bg-black">
-
+              
               <motion.div 
                 className="landing flex flex-grow mb-28 w-full"
                 initial="hidden"
@@ -78,7 +79,9 @@ function About() {
                     <p>Freelance</p>
                     <p>Designer & Developer</p>
                 </div>
+              {/* <Skills /> */}
               </motion.div>
+
         </section>
   )
 }
