@@ -21,12 +21,11 @@ function Skills() {
     <section className="section">
     <div className="boxes-container">
          {/* <!-- ************************COLUMN1********************************************* --> */}
-        <div className="columns box1 flex">
-            <div className="col col-1 flex-1 ">
-                <div className="flex flex-col">
+        <div className="columns flex flex-col md:flex-row">
+            <div className="col-1 flex-1 flex-col justify-center">
                     <div className="flex flex-row justify-between">
-                        <img src={nextjs} alt=""/>
-                        <img src={react} alt=""/>
+                        <img src={nextjs} className="w-2/5 h-1/2" alt=""/>
+                        <img src={react} className="w-2/5 h-1/2" alt=""/>
                     </div>
                     <div className="text-box">
                         <p>
@@ -36,26 +35,28 @@ function Skills() {
                          With a profound expertise in React, Redux Toolkit, and Next.js, I consistently craft highly interactive user experiences.
                         </p>
                     </div>
-                </div>
             </div>
-            <div className="col-2  flex flex-1 flex-col">
+
+            <div className="col-2  flex flex-1 flex-col justify-between">
                 <div className="flex-1">
-                    <h1>Frondtend</h1>
-                    <span>As a fronend developer i focus on:</span>
+                    <div className="flex-1">
+                        <h1>Frondtend</h1>
+                        <span>As a fronend developer i focus on:</span>
+                    </div>
+                    <div className="text-box  pt-5 flex-2">
+                        <p>
+                        leveraging the power of Redux Toolkit to ensure efficient state management, facilitating seamless data flow and elevating user interactions.                   
+                        </p>
+                        <p>
+                        swift and flexible web development, by deliberately chosing Tailwind CSS for its pre-built utility classes, streamlining responsive design and maintaining consistency throughout the application                 
+                    </p>
+                    </div>
                 </div>
-                <div className="text-box  pt-5 flex-2">
-                    <p>
-                      leveraging the power of Redux Toolkit to ensure efficient state management, facilitating seamless data flow and elevating user interactions.                   
-                     </p>
-                    <p>
-                     swift and flexible web development, by deliberately chosing Tailwind CSS for its pre-built utility classes, streamlining responsive design and maintaining consistency throughout the application                 
-                   </p>
-                </div>
-                <div className="col col-3 flex-3">
-                    <img src={tailwind} alt=""/>
-                    <img src={redux} alt=""/>
-                    <img src={materialui} alt=""/>
-                </div>
+                <div className="flex-1 flex flex-row ">              
+                        <img src={tailwind} className=' w-2/5 h-2/3  ' alt=""/>
+                        <img src={redux} className=' w-2/3 h-2/3  'alt=""/>        
+               </div>
+
             </div>
         </div>
         {/* <!-- *******************************COLUMN2************************************** --> */}
