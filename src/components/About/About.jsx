@@ -5,7 +5,7 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import './styles.css'
 
 import { motion } from 'framer-motion';
-import Skills from '../Skills/Skills';
+import Skills from '../Skills/Skills1';
 
 gsap.registerPlugin(ScrollTrigger);
 

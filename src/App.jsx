@@ -198,11 +198,12 @@ timeline.from('.title span' ,{
                   <Introduction />
               </section>
             
-            <About/>
+            {/* <About/> */}
+            <Skills/>
             </div>
       </div>
     </div>
-            <Skills/>
+            {/* <Skills/> */}
 
     <footer>
         <div className="logo"><a href="#">eraf</a></div>
