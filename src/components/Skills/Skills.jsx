@@ -21,7 +21,7 @@ function Skills() {
     <section className="section">
     <div className="boxes-container">
          {/* <!-- ************************COLUMN1********************************************* --> */}
-        <div className=" flex">
+        <div className="columns box1 flex">
             <div className="col col-1 flex-1 ">
                 <div className="flex flex-col">
                     <div className="flex flex-row justify-between">
